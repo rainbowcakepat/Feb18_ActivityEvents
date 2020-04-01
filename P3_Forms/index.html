@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Forms 2</title>
+    <script src = "js/forms.js"></script>
+    <link rel="stylesheet" href="css/forms.css">
+
+</head>
+<body>
+    
+    <form onsubmit="submits()">
+        <div id="box1">
+            <h1>Speaker Submission</h1>
+            <p>Want to speak at our fake conference?<br>Fill out this form.</p> <br>
+        </div>
+
+        <div id ="box2">
+            <label>Name: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <input id = "name" type="text" required></label>  <br>
+            <label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input id ="email" type="email" placeholder="you@example.com" required></label><br>
+            <label>Type of Talk</label>
+                <input id="mainStage" name="radio" type="radio" required>
+                <label for="mainStage">Main Stage</label>
+
+                <input id="workshop" name="radio" type="radio" required>
+                <label for="workshop">Workshop</label>
+                <br>
+            <label>T-Shirt Size: &nbsp;</label>
+            <select name="tshirt">
+                <option id="t1" value ="jr">Extra Small</option>
+                <option id="t2" value ="sr">Medium</option>
+            </select>
+            <br>
+            
+                
+                <label style=color:green id="ab">Abstract &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <textarea id="abstract" name="abstract" rows="10" cols="30" required oninvalid="submits()"></textarea>
+                
+
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="cbox" name="cbox" type="checkbox" onchange="check()" required>
+                <label>I'm actually available the date of the Talk</label>
+                <br>
+                <input id ="submit" value="Submit" type="submit" onclick="submits()"> &nbsp; 
+        </div>
+    </form>
+
+
+</body>
+</html>

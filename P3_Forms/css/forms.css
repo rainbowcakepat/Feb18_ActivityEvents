@@ -1,0 +1,36 @@
+body {
+    height: 100;
+    width: 100;
+    background-color:skyblue;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+#box1 {
+    background-color: white;
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+   
+}
+
+#box2 {
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+    margin: 25px;
+    
+}
+
+#ab {
+    float: left;
+    margin-top: 80px;
+   
+}
+
+#submit {
+    margin-left: 90px;
+}
